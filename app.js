@@ -36,10 +36,10 @@ ${process.env.secrets_tianapi_key}
 \`\`\`
 
 > 导出时间：${now}
-> https://github.com/loa123/WXworkRobot`;
+> https://github.com/loa123/WeixinWork`;
     const f = await this.uploadFile("配置数据备份.md", Buffer.from(CONF_DATA));
     await this.sendFile(f);
-    await this.sendMarkdown("🤖 Hello! 企业微信机器人!\n> 项目地址：[@企业微信机器人](https://github.com/loa123/WXworkRobot)\n> 启动时间：" + now ); //修正为北京时间
+    await this.sendMarkdown("🤖 Hello! 企业微信机器人!\n> 项目地址：[@企业微信机器人](https://github.com/loa123/WeixinWork)\n> 启动时间：" + now ); //修正为北京时间
 
     // test env
     // const $f = await this.uploadFile("env.txt", new Buffer(JSON.stringify(process.env)));
